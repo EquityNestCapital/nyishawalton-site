@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/backoffice", "destination": "https://claude.ai/artifact/TreU4o5yKYNrxdvYmy5c5C", "permanent": false },
+    { "source": "/backoffice/", "destination": "https://claude.ai/artifact/TreU4o5yKYNrxdvYmy5c5C", "permanent": false }
+  ]
+}
