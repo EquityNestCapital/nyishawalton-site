@@ -319,10 +319,10 @@ nav{background:rgba(8,8,7,.94)!important;border-bottom:1px solid rgba(255,255,25
 .hero .photo img{object-position:50% 0%}
 @media (max-width:820px){.hero .photo{top:auto;width:100%}}
 /* designer cards */
-.person img[src="joseph.jpg"]{transform:scale(1.7);transform-origin:50% 16%}
-.person:hover img[src="joseph.jpg"]{transform:scale(1.72)}
+
+
 .person h3{line-height:1.02}
-.person h3 .ln{color:#2DB27C}
+.person h3 .ln{color:#17986A}
 @media (min-width:961px){.team{grid-template-columns:repeat(3,1fr)!important}}
 /* coming soon */
 .soonitem{opacity:.85}.soonitem .by{color:var(--acc)}
