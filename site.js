@@ -33,7 +33,7 @@
     [].slice.call(document.querySelectorAll('.galnav button')).forEach(function(b){b.addEventListener('click',function(){g.scrollBy({left:(+b.dataset.d)*400,behavior:'smooth'})})});}
 
   var nav=document.getElementById('nav');
-  function onScroll(){nav.classList.toggle('solid',window.scrollY>40)}
+  var lastY=window.scrollY;function onScroll(){var y=window.scrollY;nav.classList.toggle('solid',y>40);var open=document.querySelector('.links.open');if(y>160&&y>lastY+4&&!open)nav.classList.add('hide');else if(y<lastY-4||y<=160)nav.classList.remove('hide');lastY=y}
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
   var tabs=[].slice.call(document.querySelectorAll('.tab')),panels=[].slice.call(document.querySelectorAll('#panels .panel'));
   tabs.forEach(function(t){t.addEventListener('click',function(){var i=+t.dataset.p;tabs.forEach(function(x,j){x.setAttribute('aria-selected',j===i?'true':'false')});panels.forEach(function(p,j){p.hidden=j!==i});});});
