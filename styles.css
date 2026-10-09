@@ -699,3 +699,32 @@ body:not(.inner) #systems .os-head{margin-bottom:40px}
 .galhead.galcenter .galp{max-width:880px;margin:18px auto 0}
 /* Thinner white frames on the team photos. */
 .faces img{border-width:3px!important}
+
+/* 9 Oct 2026, Systems and Projects pages. */
+/* Centered headings. */
+.centerhead{text-align:center}
+.centerhead h2{margin-inline:auto}
+.inside{text-align:center}
+.inside .insideh{margin-inline:auto}
+.sysclose{text-align:center;display:flex;flex-direction:column;align-items:center}
+.sysclose h2{max-width:20ch;margin-inline:auto}
+.sysclose .lede{margin-inline:auto}
+.sysclose>div{justify-content:center}
+/* The four outcomes: no boxes. A thin gold line, a small number, and the words. */
+.wins.wins2{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(24px,3vw,44px);background:none;border:0;border-radius:0;overflow:visible}
+.wins.wins2 div{background:none;padding:22px 0 0;border-top:1px solid var(--champ)}
+.wins.wins2 i{display:block;font:500 11px/1 var(--sans);font-style:normal;letter-spacing:.28em;color:var(--champ);margin-bottom:16px}
+.wins.wins2 b{font:500 19px/1.3 var(--sans)!important;color:#F1EFE9;margin-bottom:10px}
+.wins.wins2 span{font-size:14.5px;line-height:1.65;color:#B5B2A8}
+@media (max-width:960px){.wins.wins2{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.wins.wins2{grid-template-columns:1fr}}
+/* "Part of LenderNest" and "Custom project scoping": plain small labels, no bubble. */
+.scope{border:0!important;border-radius:0!important;padding:0!important;display:inline-flex!important;align-items:center;gap:10px}
+.scope::before{content:"";width:18px;height:1px;background:currentColor}
+.scopekey .scope.cu{margin-left:18px}
+/* "Live in our systems" strip on Home: centered. */
+.feedin{justify-content:center;text-align:center}
+.feedin .ftime{margin-left:0}
+/* The quote fits on one line on computer screens. */
+.quote-wide blockquote{font-size:clamp(17px,1.7vw,25px)}
+@media (min-width:1100px){.quote-wide blockquote{white-space:nowrap}}
