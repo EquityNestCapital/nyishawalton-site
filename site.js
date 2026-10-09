@@ -47,13 +47,17 @@
   var TO='https://formsubmit.co/ajax/coachnyisha@gmail.com';
   var th=document.getElementById('thanks');var g=function(id){var el=document.getElementById(id);return el?el.value:''};
   var needs=[].slice.call(f.querySelectorAll('.checks input:checked')).map(function(c){return c.parentNode.textContent.trim()}).join(', ');
+  /* Spam guard: a hidden box only robots fill in, and a short pause between sends. Real people never notice either. */
+  if(g('f-web')){th.textContent='Thank you for reaching out.';th.hidden=false;return}
+  var last=0;try{last=+sessionStorage.getItem('nwSent')||0}catch(_){}
+  if(Date.now()-last<30000){th.textContent='Thank you, we already have your request. Please wait a moment before sending another.';th.hidden=false;return}
   var btn=f.querySelector('button[type=submit]');if(btn)btn.disabled=true;
   var data={_subject:'New consultation request: '+g('f-name'),_template:'table',_captcha:'false',Name:g('f-name'),email:g('f-email'),Phone:g('f-phone'),Business:g('f-biz'),Industry:g('f-ind'),'Best way to reach them':g('f-contact'),'Where they want support':needs,'What they want to make easier or bring to life':g('f-msg')};
   th.textContent='Sending...';th.hidden=false;
   fetch(TO,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)}).then(function(r){return r.json()}).then(function(j){
     var ok=j&&(j.success===true||j.success==='true');
     th.textContent=ok?'Thank you for reaching out. We\'ll review your request and reach out by phone or email with two times to talk.':'Something went wrong. Please try again in a minute.';
-    if(ok)f.reset();if(btn)btn.disabled=false}).catch(function(){th.textContent='Something went wrong. Please try again in a minute.';if(btn)btn.disabled=false});
+    if(ok){f.reset();try{sessionStorage.setItem('nwSent',String(Date.now()))}catch(_){}}if(btn)btn.disabled=false}).catch(function(){th.textContent='Something went wrong. Please try again in a minute.';if(btn)btn.disabled=false});
 });
 var mb=document.querySelector('.menu');if(mb)mb.addEventListener('click',function(){document.querySelector('.links').classList.toggle('open')});
 var fl=document.getElementById('fline'),ft=document.getElementById('ftime');if(fl){var L=['New lead captured from the website','Welcome email sent automatically','Strategy call booked for Tuesday','Lender match found in seconds','Contract signed and filed','New site launched','Follow-up text sent on schedule','Monthly report delivered'],T=['just now','2 sec ago','just now','4 sec ago','just now','1 min ago','just now','just now'],n=0;if(!matchMedia('(prefers-reduced-motion: reduce)').matches)setInterval(function(){fl.classList.add('out');setTimeout(function(){n=(n+1)%L.length;fl.textContent=L[n];ft.textContent=T[n];fl.classList.remove('out')},420)},2600)}
