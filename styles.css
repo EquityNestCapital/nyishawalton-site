@@ -684,3 +684,7 @@ body.inner nav,body.inner nav.solid{background:#080807!important;-webkit-backdro
 
 /* 9 Oct 2026: the opening line sits under the headline, so the left side of the intro has less empty space. */
 .intro-under{margin-top:28px;max-width:520px}
+
+/* 9 Oct 2026: the quote runs the full width across the bottom of the Gifts section. */
+.quote-wide{margin:clamp(40px,5vw,64px) 0 0;padding:clamp(28px,3.5vw,44px) 0 0;border-top:1px solid var(--champ);text-align:center}
+.quote-wide blockquote{margin:0 auto;font:400 clamp(22px,2.4vw,34px)/1.35 var(--serif);max-width:none}
