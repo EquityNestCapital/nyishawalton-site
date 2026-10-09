@@ -688,3 +688,14 @@ body.inner nav,body.inner nav.solid{background:#080807!important;-webkit-backdro
 /* 9 Oct 2026: the quote runs the full width across the bottom of the Gifts section. */
 .quote-wide{margin:clamp(40px,5vw,64px) 0 0;padding:clamp(28px,3.5vw,44px) 0 0;border-top:1px solid var(--champ);text-align:center}
 .quote-wide blockquote{margin:0 auto;font:400 clamp(22px,2.4vw,34px)/1.35 var(--serif);max-width:none}
+
+/* 9 Oct 2026: less empty space on the Home page sections. */
+body:not(.inner) .band{padding-block:clamp(56px,6vw,92px)}
+body:not(.inner) #systems .os-head{margin-bottom:40px}
+/* Projects heading and paragraph centered, full width. */
+.galhead.galcenter{display:block;text-align:center}
+.galhead.galcenter .eyebrow{justify-content:center}
+.galhead.galcenter h2{margin-left:auto;margin-right:auto}
+.galhead.galcenter .galp{max-width:880px;margin:18px auto 0}
+/* Thinner white frames on the team photos. */
+.faces img{border-width:3px!important}
