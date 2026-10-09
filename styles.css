@@ -681,3 +681,6 @@ body.inner nav,body.inner nav.solid{background:#080807!important;-webkit-backdro
    Home keeps it on the left beside the photo. Desktop only; phones keep
    the Menu button as before. */
 @media (min-width:961px){body.inner nav .wrap{justify-content:center}}
+
+/* 9 Oct 2026: the opening line sits under the headline, so the left side of the intro has less empty space. */
+.intro-under{margin-top:28px;max-width:520px}
