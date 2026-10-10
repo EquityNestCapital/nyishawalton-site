@@ -21,7 +21,8 @@ a{color:inherit}img{max-width:100%;display:block}
 .eyebrow{display:inline-flex;align-items:center;gap:14px;font:500 11.5px/1 var(--sans);letter-spacing:.34em;text-transform:uppercase;color:var(--acc)}
 .eyebrow::before{content:"";width:34px;height:1px;background:currentColor}
 .big{font-family:var(--display);font-weight:900;font-stretch:68%;text-transform:uppercase;line-height:.88;letter-spacing:-.005em;margin:0;text-wrap:balance}
-h2.big{font-size:clamp(46px,7.4vw,104px);margin-top:22px}
+h2.big,
+h1.big{font-size:clamp(46px,7.4vw,104px);margin-top:22px}
 .gold{color:var(--acc2)}
 .it{font-family:var(--serif);font-style:italic;font-weight:400;text-transform:none;font-stretch:100%;letter-spacing:0}
 .lede{font-family:var(--serif);font-size:clamp(23px,2.5vw,30px);line-height:1.35;max-width:32ch;margin:26px 0 0}
@@ -249,7 +250,8 @@ body{animation:pagein .8s var(--ease) both}body.leaving{opacity:.001;transition:
 @keyframes pagein{from{opacity:.001}to{opacity:1}}
 .band{padding-block:clamp(100px,12vw,172px)}
 .big{font-weight:400;font-stretch:100%;letter-spacing:.015em;line-height:.98}
-h2.big{font-size:clamp(46px,7vw,100px)}
+h2.big,
+h1.big{font-size:clamp(46px,7vw,100px)}
 .it,em{font-style:normal}
 .lede{font-family:var(--sans);font-weight:300;font-size:clamp(19px,1.8vw,23px);line-height:1.55;max-width:38ch}
 .intro h2{font-size:clamp(46px,6vw,86px);line-height:1}
@@ -311,7 +313,8 @@ footer .mark{font-family:var(--display);font-weight:400;font-stretch:100%;letter
 .hero .photo::after{background:linear-gradient(90deg,var(--ink) 0%,rgba(8,8,7,.85) 12%,rgba(8,8,7,.4) 26%,rgba(8,8,7,0) 42%),linear-gradient(0deg,var(--ink) 0%,rgba(8,8,7,0) 32%),linear-gradient(180deg,rgba(8,8,7,.7) 0%,rgba(8,8,7,0) 18%),radial-gradient(70% 60% at 58% 40%,rgba(8,8,7,0) 40%,rgba(8,8,7,.55) 100%)!important}
 .hero .photo img{filter:brightness(.9) saturate(.95);animation:none!important;transform:none!important}
 .hero h1{font-size:min(8.2vw,15.5vh,140px)!important}
-h2.big{font-size:clamp(40px,min(7vw,13vh),100px)}
+h2.big,
+h1.big{font-size:clamp(40px,min(7vw,13vh),100px)}
 @media (max-width:820px){.hero h1{font-size:clamp(48px,13vw,90px)!important}}
 /* hero photo clear of headline */
 .hero .photo{top:76px;width:min(44%,620px)}
@@ -420,7 +423,8 @@ footer .row2{margin-top:34px;padding-top:18px}
 /* process section */
 .band:has(.steps){padding-block:clamp(64px,7vw,100px)}
 .band:has(.steps)>.wrap{display:grid;grid-template-columns:.8fr 1.4fr;gap:clamp(30px,5vw,70px);align-items:start}
-.band:has(.steps) h2.big{margin-bottom:0!important}
+.band:has(.steps) h2.big,
+.band:has(.steps) h1.big{margin-bottom:0!important}
 .steps{margin-top:0!important;grid-template-columns:1fr!important;gap:0!important;border-top:1px solid var(--line)}
 .steps .st{display:grid;grid-template-columns:50px 180px 1fr;align-items:baseline;gap:12px;border-top:0;border-bottom:1px solid var(--line);padding:20px 0}
 .steps .st h3{margin:0}
@@ -494,7 +498,10 @@ html.f-bold .big,html.f-med .big{letter-spacing:-.005em;line-height:.92}
 .fpick button:focus-visible{outline:2px solid #17986A}
 
 /* ---- messaging update 6 Oct 2026 ---- */
-h2.big.long{font-size:clamp(34px,min(4.6vw,9vh),66px);line-height:1.04}
+h2.big.long,
+
+/* ---- messaging update 6 Oct 2026 ---- */
+h1.big.long{font-size:clamp(34px,min(4.6vw,9vh),66px);line-height:1.04}
 .intro h2.long{font-size:clamp(36px,4.4vw,64px);line-height:1.06}
 .hero .sub{flex-direction:column;align-items:flex-start}
 .hero .sub p{max-width:46ch!important;font-size:clamp(16px,1.35vw,19px)!important;line-height:1.6!important}

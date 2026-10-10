@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /NYISHAWALTON%20ROLODEX%202%20FILES/
+Disallow: /NYISHAWALTON ROLODEX 2 FILES/
+
+Sitemap: https://www.nyishawalton.com/sitemap.xml
