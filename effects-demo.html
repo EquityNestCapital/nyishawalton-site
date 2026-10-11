@@ -1,0 +1,81 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Picture effects | Nyisha Walton</title>
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Jost:wght@300;400;500&display=swap">
+<style>
+:root{--gold:#E8D6A8;--gold2:#C9A86A;--green:#17986A}
+*{box-sizing:border-box}
+body{margin:0;color:#E9E6DD;font:300 17px/1.7 "Jost",Arial,sans-serif;background:radial-gradient(120% 80% at 85% 0%,rgba(23,152,106,.26),transparent 60%) fixed,radial-gradient(90% 70% at 0% 100%,rgba(23,152,106,.18),transparent 60%) fixed,#080807}
+header{text-align:center;padding:64px 20px 10px}
+h1{font:500 clamp(34px,4vw,52px)/1.05 "Archivo",Arial,sans-serif;font-stretch:88%;margin:0 0 10px;color:#F4F1E8}
+header p{margin:0 auto;max-width:56ch;color:#B5B2A8}
+.fx{width:min(820px,calc(100% - 40px));margin:80px auto;text-align:center}
+.fx h2{font:500 30px/1.1 "Archivo",Arial,sans-serif;font-stretch:88%;margin:0 0 6px;color:#F4F1E8}
+.fx .how{margin:0 0 30px;color:var(--gold2);font-size:15.5px}
+.pic{display:block;position:relative;border-radius:8px;overflow:hidden;box-shadow:0 50px 80px -50px rgba(0,0,0,.95)}
+.pic img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+
+/* A. Pick it up: tilts toward your pointer like a photo in your hand */
+.a{perspective:1200px}
+.a .pic{transition:transform .25s ease-out,box-shadow .4s;transform-style:preserve-3d;will-change:transform}
+.a .pic::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.18),transparent 45%);opacity:0;transition:opacity .3s;pointer-events:none}
+.a .pic:hover{box-shadow:0 80px 120px -50px rgba(0,0,0,1),0 0 70px -20px rgba(23,152,106,.5)}
+.a .pic:hover::after{opacity:1}
+
+/* B. Lift and reveal: rises off the page and shows a gold "View website" */
+.b .pic{transition:transform .6s cubic-bezier(.2,.7,.2,1),box-shadow .6s}
+.b .pic img{transition:transform 1s cubic-bezier(.2,.7,.2,1),filter .6s}
+.b .pic .cta{position:absolute;inset:0;display:grid;place-items:center;opacity:0;transition:opacity .5s}
+.b .pic .cta span{padding:14px 26px;border:1px solid var(--gold);border-radius:12px;color:var(--gold);font:500 15px/1 "Jost",sans-serif;letter-spacing:.06em;background:rgba(8,8,7,.55);backdrop-filter:blur(6px);transform:translateY(10px);transition:transform .5s}
+.b .pic:hover{transform:translateY(-14px) scale(1.02);box-shadow:0 90px 120px -50px rgba(0,0,0,1)}
+.b .pic:hover img{transform:scale(1.05);filter:brightness(.6)}
+.b .pic:hover .cta{opacity:1}
+.b .pic:hover .cta span{transform:none}
+
+/* C. Gold frame: a thin gold frame slides out behind the picture */
+.c .wrapc{position:relative;display:inline-block;width:100%}
+.c .wrapc::before{content:"";position:absolute;inset:0;border:1px solid var(--gold2);border-radius:8px;transition:transform .6s cubic-bezier(.2,.7,.2,1),opacity .6s;opacity:0}
+.c .pic{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.c .wrapc:hover::before{transform:translate(18px,18px);opacity:1}
+.c .wrapc:hover .pic{transform:translate(-8px,-8px)}
+
+/* D. Open it up: click and it comes off the page, big, in the middle */
+.d .pic{cursor:zoom-in;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.d .pic:hover{transform:translateY(-6px)}
+.lb{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:rgba(8,8,7,.86);backdrop-filter:blur(8px);opacity:0;pointer-events:none;transition:opacity .4s}
+.lb.on{opacity:1;pointer-events:auto}
+.lb figure{margin:0;width:min(1100px,92vw);text-align:center;transform:scale(.9) translateY(20px);transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.lb.on figure{transform:none}
+.lb img{width:100%;border-radius:10px;box-shadow:0 60px 120px -40px #000}
+.lb figcaption{margin-top:18px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.lb a,.lb button{font:500 15px/1 "Jost",sans-serif;padding:13px 24px;border-radius:12px;cursor:pointer;text-decoration:none}
+.lb a{background:linear-gradient(135deg,var(--gold),#B08D48);color:#080807;border:0}
+.lb button{background:none;color:#E9E6DD;border:1px solid rgba(255,255,255,.3)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body>
+<header><h1>Pick your favorite</h1><p>Point at each picture to try it. Effect D works when you click. Tell me the letter you like, or mix two together.</p></header>
+
+<section class="fx a"><h2>A. Pick it up</h2><p class="how">The picture tilts toward your pointer, like a photo in your hand, with a soft shine.</p>
+<a class="pic" href="https://los.equitynestcapital.com" target="_blank" rel="noopener"><img src="i-lendernest.jpg" alt="LenderNest"></a></section>
+
+<section class="fx b"><h2>B. Lift and reveal</h2><p class="how">The picture rises off the page and a gold "View website" appears.</p>
+<a class="pic" href="https://www.thegreenprint.trade" target="_blank" rel="noopener"><img src="i-green.jpg" alt="The Greenprint"><span class="cta"><span>View website</span></span></a></section>
+
+<section class="fx c"><h2>C. Gold frame</h2><p class="how">The picture steps forward and a thin gold frame slides out behind it.</p>
+<div class="wrapc"><a class="pic" href="https://www.cartaink.com" target="_blank" rel="noopener"><img src="i-carta.jpg" alt="Carta Ink"></a></div></section>
+
+<section class="fx d"><h2>D. Open it up</h2><p class="how">Click the picture and it comes off the page, big, in the middle of the screen.</p>
+<a class="pic" href="https://equitynestcapital.com" data-big="i-equity.jpg"><img src="i-equity.jpg" alt="EquityNest Capital"></a></section>
+
+<div class="lb" role="dialog" aria-label="Project picture"><figure><img alt=""><figcaption><a target="_blank" rel="noopener">View website</a><button type="button">Close</button></figcaption></figure></div>
+<script>
+document.querySelectorAll('.a .pic').forEach(function(p){
+  p.addEventListener('mousemove',function(e){var r=p.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+    p.style.transform='rotateY('+((x-.5)*14)+'deg) rotateX('+((.5-y)*10)+'deg) translateZ(30px) scale(1.03)';p.style.setProperty('--mx',x*100+'%');p.style.setProperty('--my',y*100+'%');});
+  p.addEventListener('mouseleave',function(){p.style.transform='';});
+});
+var lb=document.querySelector('.lb');
+document.querySelectorAll('.d .pic').forEach(function(p){p.addEventListener('click',function(e){e.preventDefault();lb.querySelector('img').src=p.dataset.big;lb.querySelector('img').alt=p.querySelector('img').alt;lb.querySelector('a').href=p.href;lb.classList.add('on');});});
+lb.addEventListener('click',function(e){if(e.target===lb||e.target.tagName==='BUTTON')lb.classList.remove('on');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on');});
+</script>
+</body></html>
