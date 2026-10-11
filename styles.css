@@ -751,3 +751,41 @@ body:not(.inner) #systems .os-head{margin-bottom:40px}
 .care h3{margin:12px 0 12px}
 .care ul{grid-template-columns:repeat(4,1fr)!important;gap:16px 28px!important;padding-top:24px;border-top:1px solid rgba(217,193,147,.25)}
 @media (max-width:860px){.care ul{grid-template-columns:1fr 1fr!important}}
+
+/* ---- 10 Oct 2026: Our Projects showcase ---- */
+.pjhero{padding-bottom:0!important;overflow:hidden}
+.pjhero .grid2{margin-bottom:0}
+.pjhero .prose p{color:#C8C5BB}
+.pjstats{display:flex;flex-wrap:wrap;gap:14px clamp(28px,5vw,70px);margin:clamp(36px,5vw,56px) 0 0;padding-top:28px;border-top:1px solid rgba(255,255,255,.12)}
+.pjstats div{display:flex;align-items:baseline;gap:12px}
+.pjstats b{font:400 clamp(44px,5vw,68px)/1 var(--serif);background:linear-gradient(140deg,#F4E4BC,#C9A86A);-webkit-background-clip:text;background-clip:text;color:transparent}
+.pjstats span{font:500 11.5px/1.4 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:#B5B2A8}
+.wall{margin-top:clamp(48px,6vw,80px);padding:20px 0 clamp(60px,7vw,100px);display:grid;gap:26px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.wrow{overflow:hidden}
+.wtrack{display:flex;gap:30px;width:max-content;padding:14px 0;animation:wallmove 70s linear infinite}
+.r2 .wtrack{animation-direction:reverse;animation-duration:80s}
+.wall:hover .wtrack{animation-play-state:paused}
+@keyframes wallmove{to{transform:translateX(-50%)}}
+.wt{margin:0;width:clamp(220px,22vw,300px);background:#fff;padding:8px 8px 0;border-radius:14px;box-shadow:0 26px 50px -24px rgba(0,0,0,.85);flex:none}
+.wt:nth-child(odd){transform:rotate(-2.5deg)}
+.wt:nth-child(even){transform:rotate(2deg) translateY(8px)}
+.wt img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:50% 0;border-radius:8px}
+.wt figcaption{font:500 10.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#0B0B0A;text-align:center;padding:11px 4px 12px}
+@media (prefers-reduced-motion:reduce){.wtrack{animation:none}}
+.pjfeat{background:radial-gradient(70% 50% at 100% 0%,rgba(23,152,106,.08),transparent 70%),#fff}
+.pjfh{margin-bottom:clamp(48px,6vw,80px)}
+.pjfeat .pfimg{box-shadow:0 50px 90px -40px rgba(8,8,7,.55),0 0 0 1px rgba(8,8,7,.06),0 0 80px -20px rgba(23,152,106,.35)}
+.pjfeat .pf{gap:clamp(36px,6vw,96px)}
+.pjfeat .pftext h3{font-size:clamp(46px,5vw,76px)}
+.pfilter{display:flex;flex-wrap:wrap;gap:10px;margin-top:clamp(28px,4vw,40px)}
+.pfilter button{font:500 13px/1 var(--sans);letter-spacing:.03em;padding:11px 18px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;transition:background .3s,color .3s,border-color .3s}
+.pfilter button:hover{border-color:var(--ink)}
+.pfilter button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pfilter button:focus-visible{outline:2px solid #17986A;outline-offset:2px}
+.pgrid .pcard[hidden]{display:none!important}
+.pcard{background:#fff;border-radius:16px;padding:12px 12px 20px;box-shadow:0 1px 0 rgba(8,8,7,.04),0 24px 50px -36px rgba(8,8,7,.45);transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}
+.pcard:hover{transform:translateY(-6px);box-shadow:0 36px 70px -36px rgba(8,8,7,.55)}
+.pcard .pcimg{margin-bottom:18px;box-shadow:none}
+.pcard>*:not(.pcimg){padding-inline:6px}
+@media (max-width:600px){.wt{width:200px}.pjstats div{gap:8px}}
+.pfilter{justify-content:center}
