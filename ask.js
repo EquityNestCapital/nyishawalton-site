@@ -9,7 +9,7 @@
   var BOOK = 'apply.html';
 
   var css = '' +
-  '.an-btn{position:fixed;right:20px;bottom:20px;z-index:60;width:66px;height:66px;border-radius:50%;padding:0;border:2px solid #D9C193;background:#0F6B4A url(nyisha.jpg) 50% 18%/cover no-repeat;box-shadow:0 14px 34px -10px rgba(0,0,0,.55);cursor:pointer;transition:transform .3s}' +
+  '.an-btn{position:fixed;right:20px;bottom:20px;z-index:60;width:66px;height:66px;border-radius:50%;padding:0;border:2px solid #D9C193;background:#0F6B4A url(ask-nyisha.jpg) 50% 50%/cover no-repeat;box-shadow:0 14px 34px -10px rgba(0,0,0,.55);cursor:pointer;transition:transform .3s}' +
   '.an-btn:hover{transform:translateY(-3px)}' +
   '.an-btn:focus-visible{outline:2px solid #D9C193;outline-offset:3px}' +
   '.an-tease{position:fixed;right:96px;bottom:30px;z-index:60;max-width:250px;background:#fff;color:#141519;border-radius:12px;padding:12px 30px 12px 14px;font:400 14px/1.45 "Jost",Arial,sans-serif;box-shadow:0 14px 34px -14px rgba(0,0,0,.45);opacity:0;transform:translateY(8px);transition:opacity .4s,transform .4s;pointer-events:none}' +
@@ -19,7 +19,7 @@
   '.an-panel{position:fixed;right:20px;bottom:98px;z-index:61;width:min(380px,calc(100vw - 32px));max-height:min(560px,calc(100vh - 120px));display:none;flex-direction:column;background:#fff;color:#141519;border-radius:14px;overflow:hidden;box-shadow:0 30px 70px -20px rgba(0,0,0,.6);font:400 14.5px/1.5 "Jost",Arial,sans-serif}' +
   '.an-panel.on{display:flex}' +
   '.an-head{display:flex;align-items:center;gap:12px;padding:14px 16px;background:#080807;color:#F1EFE9;border-bottom:1px solid #D9C193}' +
-  '.an-head i{width:38px;height:38px;border-radius:50%;flex:none;background:url(nyisha.jpg) 50% 18%/cover;border:1px solid #D9C193}' +
+  '.an-head i{width:38px;height:38px;border-radius:50%;flex:none;background:url(ask-nyisha.jpg) 50% 50%/cover;border:1px solid #D9C193}' +
   '.an-head b{display:block;font-weight:500;letter-spacing:.04em}' +
   '.an-head small{display:block;color:#B5B2A8;font-size:12px}' +
   '.an-head button{margin-left:auto;border:0;background:none;color:#B5B2A8;font-size:22px;line-height:1;cursor:pointer}' +
