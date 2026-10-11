@@ -899,3 +899,8 @@ nav.solid{background:#080807!important;-webkit-backdrop-filter:none!important;ba
 .msoon{display:inline-block;margin-top:14px;font:400 14px/1 var(--sans);color:#C9A86A}
 @media (max-width:860px){.chapter,.chapter.flip{grid-template-columns:1fr}.chapter.flip .cimg{order:0}.more{grid-template-columns:1fr}.more>*:nth-child(even){transform:none}}
 @media (prefers-reduced-motion:reduce){.cimg img,.mimg img{transition:none}}
+
+/* 10 Oct 2026: Services page is dark like the rest of the site. */
+#services .care{border:1px solid rgba(217,193,147,.28)}
+#services .svrow p{color:#C9C5BA}
+#services .svtag{color:#B5B2A8}
