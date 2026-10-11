@@ -919,3 +919,8 @@ nav.solid{background:#080807!important;-webkit-backdrop-filter:none!important;ba
 .band.dark::before,footer.dark::before{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")!important}
 .statband::before,.chapter::before{display:none}
 .statband{border-block:0!important}
+/* 10 Oct 2026: every project is its own spread, one after another. */
+.chapter.small{margin-bottom:clamp(80px,9vw,130px)}
+.chapter.small .ctext h2{font-size:clamp(34px,3.6vw,52px)}
+.chapter.soon .cimg img{filter:grayscale(.4) brightness(.8)}
+.moreh{margin-bottom:clamp(60px,7vw,100px)!important}
