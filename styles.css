@@ -904,3 +904,18 @@ nav.solid{background:#080807!important;-webkit-backdrop-filter:none!important;ba
 #services .care{border:1px solid rgba(217,193,147,.28)}
 #services .svrow p{color:#C9C5BA}
 #services .svtag{color:#B5B2A8}
+
+/* 10 Oct 2026: care plan is not in a box. Centered, with green check marks. */
+#services .care{background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:clamp(20px,3vw,40px) 0 0!important;text-align:center;justify-items:center}
+#services .care>div{max-width:720px;margin:0 auto}
+#services .care h3{margin-left:auto;margin-right:auto}
+#services .care ul{border-top:0!important;padding-top:6px!important;max-width:980px;margin:0 auto;justify-content:center;text-align:left}
+#services .care li::before{content:"✓";width:auto;height:auto;margin-top:0;background:none;color:#2DB27C;font-weight:700;font-size:16px;line-height:1.5}
+
+/* 10 Oct 2026: one green-to-black fade for the whole page. The dark
+   sections all show the same fade, fixed to the screen, so it flows across them,
+   with no gold glow and no section looking like its own box. */
+.band.dark,.ctaband,footer.dark,.stories,.statband{background:radial-gradient(120% 80% at 85% 0%,rgba(23,152,106,.26),transparent 60%) fixed,radial-gradient(90% 70% at 0% 100%,rgba(23,152,106,.18),transparent 60%) fixed,#080807!important}
+.band.dark::before,footer.dark::before{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")!important}
+.statband::before,.chapter::before{display:none}
+.statband{border-block:0!important}
