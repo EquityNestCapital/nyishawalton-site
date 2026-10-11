@@ -859,3 +859,6 @@ nav.solid{background:#080807!important;-webkit-backdrop-filter:none!important;ba
 .showcase .pcard p{color:#B5B2A8!important}
 .showcase .pcby{color:#D9C193!important}
 .showcase .pcard.soon{opacity:1}
+
+/* 10 Oct 2026: Our Projects numbers centered. */
+.pjstats{justify-content:center;text-align:center}
