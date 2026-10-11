@@ -789,3 +789,8 @@ body:not(.inner) #systems .os-head{margin-bottom:40px}
 .pcard>*:not(.pcimg){padding-inline:6px}
 @media (max-width:600px){.wt{width:200px}.pjstats div{gap:8px}}
 .pfilter{justify-content:center}
+
+/* 10 Oct 2026: once you scroll, the menu bar is the same solid black on
+   every page, so it never turns grey over the light sections. Home keeps
+   the clear bar only at the very top, over the photo. */
+nav.solid{background:#080807!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;border-bottom:1px solid rgba(255,255,255,.07)!important}
