@@ -31,7 +31,7 @@
   '.an-chips{display:flex;flex-wrap:wrap;gap:6px}' +
   '.an-chips button{border:1px solid #D9C193;background:#fff;color:#141519;border-radius:999px;padding:6px 11px;font:inherit;font-size:13px;cursor:pointer}' +
   '.an-chips button:hover{border-color:#0F6B4A;color:#0F6B4A}' +
-  '.an-form{display:grid;gap:7px;background:#fff;border:1px solid #E7E4DC;border-radius:12px;padding:12px}' +
+  '.an-form{display:grid!important;grid-template-columns:1fr!important;gap:7px;background:#fff;border:1px solid #E7E4DC;border-radius:12px;padding:12px}' +
   '.an-form input,.an-form textarea{font:inherit;font-size:14px;border:1px solid #D9D5CC;border-radius:8px;padding:8px 10px;width:100%;box-sizing:border-box}' +
   '.an-form textarea{min-height:64px;resize:vertical}' +
   '.an-form button{background:#0F6B4A;color:#fff;border:0;border-radius:8px;padding:9px 12px;font:inherit;font-weight:500;cursor:pointer}' +
