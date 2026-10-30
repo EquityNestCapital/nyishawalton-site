@@ -9,6 +9,16 @@
       "source": "/backoffice/",
       "destination": "https://claude.ai/artifact/TreU4o5yKYNrxdvYmy5c5C",
       "permanent": false
+    },
+    {
+      "source": "/start-your-business",
+      "destination": "https://www.northwestregisteredagent.com/incorporation-service-signup-offer?cop=1&origin=lu&sv1=affiliate&sv_campaign_id=3139257&sscid=66946_1793385605_a65deeaa924bf7d8eb8305cfdec83f13&awc=66946_1793385605_a65deeaa924bf7d8eb8305cfdec83f13",
+      "permanent": false
+    },
+    {
+      "source": "/llc",
+      "destination": "https://www.northwestregisteredagent.com/incorporation-service-signup-offer?cop=1&origin=lu&sv1=affiliate&sv_campaign_id=3139257&sscid=66946_1793385605_a65deeaa924bf7d8eb8305cfdec83f13&awc=66946_1793385605_a65deeaa924bf7d8eb8305cfdec83f13",
+      "permanent": false
     }
   ],
   "headers": [
